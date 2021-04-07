@@ -7,6 +7,7 @@ header{
     display: flex;
     justify-content: space-between;
     background-color: black;
+    flex-wrap: wrap;
     height: 30px;
     padding: 15px;
 }
@@ -89,4 +90,18 @@ form p{
 }
 .accountSettings {
     width: 90%;
+}
+.artistBio{
+    border: solid white 1px;
+    width: 300px;
+    overflow: auto;
+    background-color:  	#1db954;
+    margin: 30px;
+    padding: 20px;
+}
+.ArtCont{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 60px 20px;
 }

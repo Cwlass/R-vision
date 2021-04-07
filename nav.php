@@ -6,7 +6,7 @@ session_start();
 <header>
     <a href="home.php">HOME</a>
     <a href="songs.php">SONGS</a>
-    <a href="artist.php">ARTISTS</a>
+    <a href="artists.php">ARTISTS</a>
     <a href="">PLAYLISTS</a>
     <?php
     if (!isset($_SESSION["firstname"])) {
