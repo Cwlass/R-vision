@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 30px;
+    padding: 15px;
+}
+header p{
+    color: white;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+h1{
+    margin: 30px;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+}
+h2{
+    text-align: center;
+    margin: 30px;
+}
+body{
+    background-color: black;
+    color: white;
+}
+
+.homeInfo{
+    font-size: 3em;
+}
+.homeSection{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#1db954;
+    justify-content: space-between;
+}
+.homeSection img{
+    width: 50%;
+}
+.homeSection p{
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+    color: black;
+}
+.container{
+    width: 50%;
+}
+form{
+    border-radius: 30px;
+    background-color:  	#b3b3b3;
+    max-width: 600px;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+}
+
+form input{
+    width: 90%;
+    height: 2em;
+    margin: 5px;
+}
+
+form p{
+    color: red;
+}
+.login a{
+    display: block;
+    background-color: white;
+    color: black;
+    border: solid black 1px;
+    text-align: center;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 30px auto;
+    width: 30%;
+
+}
+.accountSettings {
+    width: 90%;
+}
