@@ -30,7 +30,7 @@
                     $query = 'SELECT * FROM users WHERE mail = "' . $_POST["email"] . '"';
                     $results = mysqli_query($conn, $query);
                     $users = mysqli_fetch_assoc($results);
-
+                    if($users != null){
                     if (password_verify($_POST["password"], $users["password"])) {
                         $_SESSION["firstname"] = $users["first_name"];
                         $_SESSION["lastname"] = $users["last_name"];
@@ -45,6 +45,9 @@
                             session_destroy();
                         }
                     }
+                }else{
+                    echo "<h1> Incorrect username of password, press register to create an account</h1>";
+                }
                 }
             }
         }

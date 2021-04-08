@@ -16,7 +16,17 @@
     if (isset($_POST["create"])) {
         if ($conn) {
             $query = "INSERT INTO playlists ('title','creation_date','user_id') VALUES ('" . $_POST['playlistName'] . "', '" . date('Y-m-d') . "','" . $_SESSION['id'] . "')";
-            mysqli_query($conn, $query);
+            echo "<br>";
+            echo "<br>";
+            echo "<pre>";
+            echo $query;
+            echo "</pre>";
+            if(mysqli_query($conn, $query)){
+                echo "playlist created";
+            }else{
+                echo "Error: " . $query . "<br>" . mysqli_error($conn);
+            }
+            
         }
     }
 
