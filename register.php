@@ -63,7 +63,7 @@
     <body>
         <div class="login">
             <h1>Register your account</h1>
-            <form action="" method="POST">
+            <form action="" method="POST" class="form">
                 <input type="text" name="firstname" placeholder="First Name">
                 <?php if (isset($Errors["firstname"])) echo "<p>" . $Errors["firstname"] . "</p>"; ?><br>
 

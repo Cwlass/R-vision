@@ -35,6 +35,7 @@
                         $_SESSION["firstname"] = $users["first_name"];
                         $_SESSION["lastname"] = $users["last_name"];
                         $_SESSION["email"] = $users["mail"];
+                        $_SESSION["id"] = $users["ID"];
                         header("location: account.php");
                         exit();
                     } else {
@@ -54,7 +55,7 @@
     <body>
         <div class="login">
             <h1>Log in</h1>
-            <form action="" method="POST">
+            <form action="" method="POST" class="form">
                 <input type="email" name="email" placeholder="email">
                 <?php if (isset($Errors["email"])) echo "<p>" . $Errors["email"] . "</p>"; ?><br>
 
