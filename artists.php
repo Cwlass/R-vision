@@ -22,6 +22,7 @@
         $artists = mysqli_fetch_all($results, MYSQLI_ASSOC);
     }
     ?>
+    <h1>ARTISTS</h1>
     <div class="ArtCont">
         <?php foreach ($artists as $artist) : ?>
             <div class="artistBio">

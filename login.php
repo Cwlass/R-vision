@@ -35,7 +35,6 @@
                         $_SESSION["firstname"] = $users["first_name"];
                         $_SESSION["lastname"] = $users["last_name"];
                         $_SESSION["email"] = $users["mail"];
-
                         header("location: account.php");
                         exit();
                     } else {
